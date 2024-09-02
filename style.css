@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    
+}
+
+:root {
+    --primary-color: #12234E;
+}
+
+.w-full{
+    width: 100%;
+}
+
+/* Form Groups */
+.form-groups label {
+    display: block; /* Ensures the label is above the input */
+    margin-bottom: 0.5rem; /* Space between label and input */
+    text-align: left; /* Align label text to the left */
+    color: #596583;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.form-groups input {
+    width: 100%; /* Input takes full width of the container */
+    margin-bottom: 1rem; /* Space below the input field */
+    background-color: #fff;
+    padding: 0.9rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    outline: none;
+    border: 1px solid #A3A9BA;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+
+}
+
+.btn{
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 1rem 0;
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1.07rem;
+    line-height: 1.25rem;
+    border-radius: 0.5rem;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+.btn-primary{
+    background-color: #12234E;
+    color: white;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.lc-showcase {
+    width: 60vw; /* Half of viewport width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+}
+
+.lc-showcase img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    position: absolute;
+    z-index: -1;
+}
+
+.lc-showcase img:nth-child(2) {
+    width: 10rem;
+    top: 1%;
+    left: 1%;
+    position: absolute;
+}
+
+.lc-showcase img:nth-child(3) {
+    width: 90%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.login-form-container {
+    padding: 0% 7% 0% 7%;
+    max-height: 70%;
+    height: 100%;
+    margin: auto;
+    flex: 1;
+}
+
+.login-form-container .portal-logo {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.login-form-container .login-form-body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.login-desc h1{
+    font-style: normal;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.login-desc p{
+    font-style: normal;
+    color: #676767;
+    margin: 0;
+    font-size: 0.9em;
+    padding-bottom: 6rem;
+    max-width: 80%;
+}
+
+.login-form-container .portal-logo img {
+    width: auto;
+    height: 2rem;
+    margin-right: 0.6rem;
+}
+
+.login-form-container .portal-logo p {
+    font-style: normal;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.update-password {
+    display: flex;
+    align-items: center;
+}
+
+.update-password p{
+    color: #12234E;
+    font-weight: 500;
+    margin-right: 0.3rem;
+}
+
+.update-password a {
+    color: #12234E;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; /* Transition the color instead */
+}
+
+.update-password a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline below the text */
+    width: 0;
+    height: 2px;
+    background-color: #12234E;
+    transition: width 0.3s ease;
+}
+
+.update-password a:hover {
+    color: #000; /* Change color on hover */
+}
+
+.update-password a:hover::after {
+    width: 100%; /* Extend the underline on hover */
+}
+
+.mobile-img{
+    margin: 0 !important;
+    display: none;
+    justify-content: end;
+}
+.mobile-img img{
+    width: 100%;
+    max-width: 40rem;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+
+    .login-container{
+        flex-direction: column;
+    }
+    .lc-showcase {
+      display: none;
+    }
+
+    .mobile-img{
+        display: flex;
+    }
+  }
+
+
+
+
+
