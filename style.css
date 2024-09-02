@@ -35,7 +35,13 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
+    transition: border 0.1s ease-in-out;
 
+}
+
+.form-groups input:focus {
+    border: 1px solid var(--primary-color);;
+    
 }
 
 .btn{
@@ -52,12 +58,21 @@ body {
     border-radius: 0.5rem;
     font-style: normal;
     box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 
 }
 
 .btn-primary{
     background-color: #12234E;
     color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0e1a3d;
+}
+.btn-primary:active {
+    background-color: #0b1733;
+    transform: scale(0.99); /* Slightly shrink the button */
 }
 
 .login-container {
