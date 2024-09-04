@@ -113,6 +113,14 @@ body {
     right: 0;
 }
 
+.lc-showcase img:nth-child(4) {
+    width: 100%;
+    opacity: 0.6;
+    top: 1rem;
+    position: absolute;
+
+}
+
 .login-form-container {
     padding: 0% 7% 0% 7%;
     max-height: 70%;
